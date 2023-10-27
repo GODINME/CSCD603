@@ -1,4 +1,6 @@
 # Rod Cutting Recurive Solution
+# Running Time: T(n) = O(2 ** n) - Non-Polynomial RunTime
+
 from math import inf 
 
 def cut_rod(p, n):
