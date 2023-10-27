@@ -21,6 +21,8 @@ def cut_rod(p, n):
 
 
 # Example 1
+## Problem: Given a steal rod of length n, cut it into pieces to maximize the profit ..
+## where profit for a piece of length i is given as p subscript i
 rod_length = [1, 2, 3, 4]
 rod_profit = [1, 5, 8, 9]
 
