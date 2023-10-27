@@ -1,5 +1,5 @@
 # Rod Cutting Buttom-Up or Memoization Solution
-# Running Time: T(n) = O(n) ** 2 - Quadratic RunTime
+# Running Time: T(n) = O(n ** 2) - Quadratic RunTime
 
 from math import inf 
 
