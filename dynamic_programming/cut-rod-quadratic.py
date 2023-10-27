@@ -9,21 +9,21 @@ def cut_rod(p, n):
     Let r be a list of substructure optimal revenue
     """
     r = [None] * (n+1)
-    print("Initial R: ", r)
     r[0] = 0
-    print("Middle R: ", r)
+    
 
     for j in range(1, n+1):
         q = -inf
         for i in range(j):
             q = max(q, p[i] + r[j-i-1])
         r[j] = q
-    print("Last R: ", r)
-    return q
+
+    return r[n]
+
 
 # Example 1
 rod_length = [1, 2, 3, 4]
 rod_profit = [1, 5, 8, 9]
 
-#print("Maximum profit in Example 1 is ", cut_rod(rod_profit, len(rod_profit)))
-print("Maximum profit in Example 1 is ", cut_rod(rod_profit, 4))
+print("Maximum profit in Example 1 is ", cut_rod(rod_profit, len(rod_profit)))
+
